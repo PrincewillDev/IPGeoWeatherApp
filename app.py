@@ -4,6 +4,9 @@ import requests
 # import os
 
 # load_dotenv()
+# TODO: Remove the WEATHER_API_KEY from here and move it to the .env file
+# Currently, the weather API does not return the expected result when the app is run with the key in the .env file
+# For now, I've left the key here for debugging purposes, but it should be removed and stored securely in the .env file very soon after.
 WEATHER_API_KEY='9d08841fb334f501656cf35139431582'
 app = Flask(__name__)
 

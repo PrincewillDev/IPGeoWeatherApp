@@ -1,12 +1,12 @@
 from flask import Flask, request, jsonify
 import requests
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
-load_dotenv()
+# load_dotenv()
 
 app = Flask(__name__)
-WEATHER_API_KEY = os.getenv('WEATHER_API_KEY')
+WEATHER_API_KEY='9d08841fb334f501656cf35139431582'
 
 def get_client_location_temp(ip_addr):
     # Get the visitor's location
